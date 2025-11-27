@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(main.py)",
+      "Bash(mkdir:*)",
+      "Bash(poetry install:.:*)",
+      "Bash(pip install:./venv/*)",
+      "Bash(pip install:venv/*)",
+      "Python(*)", 
+      "Git(*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

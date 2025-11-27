@@ -1,0 +1,245 @@
+{
+  "name": "Raphael-claude-code",
+  "version": "2.1.0",
+  "description": "Raphael personal Claude Code setup with super agent and SQL Server expert integration",
+  "author": "Raphael",
+
+  "commands": [
+    {
+      "name": "new-task",
+      "path": ".claude/commands/new-task.md",
+      "description": "Analyze task complexity and create an actionable implementation plan",
+      "agent": "ultimate-engineering-architect"
+    },
+    {
+      "name": "code-explain",
+      "path": ".claude/commands/misc/code-explain.md",
+      "description": "Generate detailed code explanations",
+      "agent": "ultimate-engineering-architect"
+    },
+    {
+      "name": "code-optimize",
+      "path": ".claude/commands/misc/code-optimize.md",
+      "description": "Optimize code for performance",
+      "agent": "ultimate-engineering-architect"
+    },
+    {
+      "name": "code-cleanup",
+      "path": ".claude/commands/misc/code-cleanup.md",
+      "description": "Clean up and refactor code",
+      "agent": "ultimate-engineering-architect"
+    },
+    {
+      "name": "feature-plan",
+      "path": ".claude/commands/misc/feature-plan.md",
+      "description": "Plan a new feature implementation",
+      "agent": "ultimate-engineering-architect"
+    },
+    {
+      "name": "lint",
+      "path": ".claude/commands/misc/lint.md",
+      "description": "Run linting and auto-fix issues",
+      "agent": "ultimate-engineering-architect"
+    },
+    {
+      "name": "docs-generate",
+      "path": ".claude/commands/misc/docs-generate.md",
+      "description": "Generate technical documentation",
+      "agent": "technical-writer"
+    },
+
+
+    {
+      "name": "api-new",
+      "path": ".claude/commands/api/api-new.md",
+      "description": "Create a new API endpoint",
+      "agent": "ultimate-engineering-architect"
+    },
+    {
+      "name": "api-test",
+      "path": ".claude/commands/api/api-test.md",
+      "description": "Test an API endpoint and generate scenarios",
+      "agent": "ultimate-engineering-architect"
+    },
+    {
+      "name": "api-protect",
+      "path": ".claude/commands/api/api-protect.md",
+      "description": "Apply validation, auth, RBAC and protection to an API",
+      "agent": "security-engineer"
+    },
+
+
+    {
+      "name": "component-new",
+      "path": ".claude/commands/ui/component-new.md",
+      "description": "Create a new Angular/React component",
+      "agent": "ultimate-engineering-architect"
+    },
+    {
+      "name": "page-new",
+      "path": ".claude/commands/ui/page-new.md",
+      "description": "Create a new frontend page",
+      "agent": "ultimate-engineering-architect"
+    },
+
+
+    {
+      "name": "etl-new",
+      "path": ".claude/commands/data/etl-new.md",
+      "description": "Create a new ETL pipeline using Python, Databricks or Spark",
+      "agent": "data-engineer-expert"
+    },
+    {
+      "name": "sql-optimize",
+      "path": ".claude/commands/data/sql-optimize.md",
+      "description": "Optimize SQL queries with performance best practices",
+      "agent": "data-engineer-expert"
+    },
+    {
+      "name": "lakehouse-model",
+      "path": ".claude/commands/data/lakehouse-model.md",
+      "description": "Design a full Medallion Lakehouse model",
+      "agent": "data-engineer-expert"
+    },
+
+
+    {
+      "name": "types-gen",
+      "path": ".claude/commands/supabase/types-gen.md",
+      "description": "Generate Supabase TypeScript types",
+      "agent": "ultimate-engineering-architect"
+    },
+    {
+      "name": "edge-function-new",
+      "path": ".claude/commands/supabase/edge-function-new.md",
+      "description": "Create a new Supabase Edge Function",
+      "agent": "ultimate-engineering-architect"
+    },
+
+
+    {
+      "name": "sql-refactor",
+      "path": ".claude/commands/sql/sql-refactor.md",
+      "description": "Refactor SQL Server queries using CROSS APPLY, derived columns, clear conversions, and comments for readability",
+      "agent": "sql-server-expert"
+    },
+    {
+      "name": "sql-cross-apply",
+      "path": ".claude/commands/sql/sql-cross-apply.md",
+      "description": "Rewrite complex SQL Server expressions into CROSS APPLY blocks with well-named derived columns and proper comments",
+      "agent": "sql-server-expert"
+    },
+    {
+      "name": "use",
+      "path": ".claude/commands/use-agent.md",
+      "description": "Select and activate any agent by name"
+    }
+  ],
+
+  "agents": [
+    {
+      "name": "tech-stack-researcher",
+      "path": ".claude/agents/tech-stack-researcher.md",
+      "description": "Research and recommend technology choices for feature development"
+    },
+    {
+      "name": "backend-architect",
+      "path": ".claude/agents/backend-architect.md",
+      "description": "Design reliable backend systems with focus on data integrity, security, and fault tolerance"
+    },
+    {
+      "name": "deep-research-agent",
+      "path": ".claude/agents/deep-research-agent.md",
+      "description": "Comprehensive deep research with intelligent investigation"
+    },
+    {
+      "name": "frontend-architect",
+      "path": ".claude/agents/frontend-architect.md",
+      "description": "Accessible, performant UI architecture using Angular/React"
+    },
+    {
+      "name": "learning-guide",
+      "path": ".claude/agents/learning-guide.md",
+      "description": "Explain and teach programming with step-by-step clarity"
+    },
+    {
+      "name": "performance-engineer",
+      "path": ".claude/agents/performance-engineer.md",
+      "description": "Measure and eliminate system performance bottlenecks"
+    },
+    {
+      "name": "refactoring-expert",
+      "path": ".claude/agents/refactoring-expert.md",
+      "description": "Improve code quality through safe refactoring"
+    },
+    {
+      "name": "requirements-analyst",
+      "path": ".claude/agents/requirements-analyst.md",
+      "description": "Convert vague ideas into structured requirement documents"
+    },
+    {
+      "name": "security-engineer",
+      "path": ".claude/agents/security-engineer.md",
+      "description": "Analyze and fix security vulnerabilities"
+    },
+    {
+      "name": "system-architect",
+      "path": ".claude/agents/system-architect.md",
+      "description": "Design scalable system architectures"
+    },
+    {
+      "name": "technical-writer",
+      "path": ".claude/agents/technical-writer.md",
+      "description": "Create clean, clear, complete technical documentation"
+    },
+    {
+      "name": "data-engineer-expert",
+      "path": ".claude/agents/data-engineer-expert.md",
+      "description": "Expert in ETL, SQL, Databricks, Spark, pipelines and cloud architecture"
+    },
+    {
+      "name": "ultimate-engineering-architect",
+      "path": ".claude/agents/ultimate-engineering-architect.md",
+      "description": "Master agent unifying architecture, data engineering, performance, refactoring, research, documentation, and teaching using KISS"
+    },
+    {
+      "name": "sql-server-expert",
+      "path": ".claude/agents/sql-server-expert.md",
+      "description": "Senior SQL Server specialist focused on CROSS APPLY, derived calculations, clear conversions, readable formatting, and commented T-SQL."
+    }
+  ],
+
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    },
+    "supabase": {
+      "command": "npx",
+      "args": ["-y", "@supabase/mcp-server-supabase"]
+    }
+  },
+
+  "tags": [
+    "architecture",
+    "python",
+    "node",
+    "typescript",
+    "angular",
+    "FastAPI",
+    "ETL",
+    "SQL",
+    "SQL Server",
+    "Databricks",
+    "Spark",
+    "Azure",
+    "GCP",
+    "AWS",
+    "productivity",
+    "mcp"
+  ]
+}
