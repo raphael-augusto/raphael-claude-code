@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "docs-server": {
+      "command": "python",
+      "args": [".claude/mcp/docs_server.py"],
+      "cwd": "${workspaceFolder}"
+    }
+  }
+}

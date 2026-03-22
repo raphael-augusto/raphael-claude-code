@@ -1,0 +1,39 @@
+{
+  "name": "spark",
+  "description": "Apache Spark MCP - Jobs Spark, PySpark, SparkSQL",
+  "version": "1.0.0",
+  "documentation": {
+    "official": "https://spark.apache.org/docs/latest/",
+    "pyspark": "https://spark.apache.org/docs/latest/api/python/index.html",
+    "spark_sql": "https://spark.apache.org/docs/latest/sql-programming-guide.html",
+    "structured_streaming": "https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html",
+    "mllib": "https://spark.apache.org/docs/latest/ml-guide.html",
+    "rdd_programming": "https://spark.apache.org/docs/latest/rdd-programming-guide.html",
+    "configuration": "https://spark.apache.org/docs/latest/configuration.html",
+    "tuning": "https://spark.apache.org/docs/latest/tuning.html",
+    "pyspark_api": "https://spark.apache.org/docs/latest/api/python/reference/index.html"
+  },
+  "tools": [
+    {
+      "name": "spark_submit",
+      "description": "Submete jobs Spark"
+    },
+    {
+      "name": "pyspark_exec",
+      "description": "Executa codigo PySpark"
+    },
+    {
+      "name": "spark_sql",
+      "description": "Executa queries SparkSQL"
+    },
+    {
+      "name": "spark_status",
+      "description": "Verifica status de jobs"
+    }
+  ],
+  "config": {
+    "spark_home": "",
+    "master": "local[*]",
+    "deploy_mode": "client"
+  }
+}

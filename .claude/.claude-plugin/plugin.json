@@ -223,7 +223,61 @@
       "args": ["-y", "@supabase/mcp-server-supabase"]
     }
   },
-
+  
+  "skills": [
+    {
+      "name": "etl-architecture",
+      "path": ".claude/skills/etl-architecture.md",
+      "description": "Design ETL pipelines using Medallion architecture (Bronze, Silver, Gold) with scalability and performance best practices",
+      "tags": [
+        "etl",
+        "data-engineering",
+        "medallion",
+        "pipelines"
+      ]
+    },
+    {
+      "name": "sqlserver-performance",
+      "path": ".claude/skills/sqlserver-performance.md",
+      "description": "Optimize SQL Server queries using CROSS APPLY, indexing strategies, and performance tuning techniques",
+      "tags": [
+        "sqlserver",
+        "performance",
+        "tuning",
+        "cross-apply"
+      ]
+    },
+    {
+      "name": "bigquery-review",
+      "path": ".claude/skills/bigquery-review.md",
+      "description": "Review and optimize BigQuery queries focusing on cost reduction and performance",
+      "tags": [
+        "bigquery",
+        "gcp",
+        "optimization"
+      ]
+    },
+    {
+      "name": "gcp-function-debug",
+      "path": ".claude/skills/gcp-function-debug.md",
+      "description": "Debug and troubleshoot Google Cloud Functions including logs, IAM, environment variables, and deployment issues",
+      "tags": [
+        "gcp",
+        "cloud-functions",
+        "debug"
+      ]
+    },
+    {
+      "name": "airflow-investigator",
+      "path": ".claude/skills/airflow-investigator.md",
+      "description": "Investigate Airflow DAG failures, retries, logs, scheduling, and dependency issues",
+      "tags": [
+        "airflow",
+        "orchestration",
+        "debug"
+      ]
+    }
+  ],
   "tags": [
     "architecture",
     "python",

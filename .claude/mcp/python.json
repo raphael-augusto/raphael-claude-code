@@ -1,0 +1,41 @@
+{
+  "name": "python",
+  "description": "Python MCP - Execucao de scripts, ambientes virtuais, pip",
+  "version": "1.0.0",
+  "documentation": {
+    "official": "https://docs.python.org/3/",
+    "tutorial": "https://docs.python.org/3/tutorial/index.html",
+    "library_reference": "https://docs.python.org/3/library/index.html",
+    "language_reference": "https://docs.python.org/3/reference/index.html",
+    "pep_index": "https://peps.python.org/",
+    "pypi": "https://pypi.org/",
+    "pandas": "https://pandas.pydata.org/docs/",
+    "numpy": "https://numpy.org/doc/stable/",
+    "requests": "https://requests.readthedocs.io/",
+    "asyncio": "https://docs.python.org/3/library/asyncio.html",
+    "typing": "https://docs.python.org/3/library/typing.html",
+    "dataclasses": "https://docs.python.org/3/library/dataclasses.html"
+  },
+  "tools": [
+    {
+      "name": "python_exec",
+      "description": "Executa scripts Python"
+    },
+    {
+      "name": "pip_install",
+      "description": "Instala pacotes via pip"
+    },
+    {
+      "name": "venv_create",
+      "description": "Cria ambiente virtual"
+    },
+    {
+      "name": "python_repl",
+      "description": "REPL Python interativo"
+    }
+  ],
+  "config": {
+    "python_path": "python",
+    "default_venv": ".venv"
+  }
+}

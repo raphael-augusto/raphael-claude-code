@@ -322,12 +322,93 @@ Databricks
 .claude/
   agents/
   commands/
+  mcp/
+    docs_server.py
+    googleGCP.json
+    python.json
+    spark.json
+    apachebeam.json
+    sql.json
+    databricks.json
+  settings.json
 docs/
   AGENTS_GUIDE.md   ← este arquivo
   ARCHITECTURE.md
   ETL_GUIDE.md
 
-# 10. Fim da documentação
+# 10. MCP Server — Consulta de Documentacoes
+
+## 10.1 O que e
+
+Servidor MCP local que consulta documentacoes oficiais de:
+- Google Cloud Platform (BigQuery, Storage, Dataflow, Pub/Sub)
+- Python (oficial, pandas, numpy)
+- Apache Spark (PySpark, SparkSQL)
+- Apache Beam (SDK Python, transforms)
+- SQL Server (T-SQL, procedures, performance)
+- Databricks (Unity Catalog, Delta Lake, Workflows)
+
+## 10.2 Localizacao
+
+```
+.claude/mcp/docs_server.py
+```
+
+## 10.3 Ativacao
+
+Reinicie o Claude Code no diretorio do projeto.
+O servidor e carregado automaticamente via `.claude/settings.json`.
+
+## 10.4 Ferramentas disponiveis
+
+| Tool | Descricao | Exemplo |
+|------|-----------|---------|
+| `list_docs` | Lista todas as documentacoes | — |
+| `get_doc` | Busca doc de tecnologia | `get_doc(tech="spark", topic="pyspark")` |
+| `search_docs` | Busca termo nas docs | `search_docs(query="window function", tech="sql")` |
+
+## 10.5 Tecnologias e topicos
+
+| Tech | Topicos disponiveis |
+|------|---------------------|
+| `gcp` | bigquery, storage, dataflow, pubsub |
+| `python` | official, pandas, numpy |
+| `spark` | official, pyspark, sql |
+| `beam` | official, python_sdk, transforms |
+| `sql` | tsql, functions, procedures |
+| `databricks` | official, unity_catalog, delta, sql |
+
+## 10.6 Exemplos de uso
+
+Listar docs:
+```
+list_docs
+```
+
+Buscar doc especifica:
+```
+get_doc tech=databricks topic=delta
+```
+
+Pesquisar termo:
+```
+search_docs query="partition by" tech=spark
+```
+
+## 10.7 Adicionar novas documentacoes
+
+Edite o dicionario `DOCS` em `.claude/mcp/docs_server.py`:
+
+```python
+DOCS = {
+    "nova_tech": {
+        "topico1": "https://url-da-doc.com",
+        "topico2": "https://outra-url.com",
+    },
+}
+```
+
+# 11. Fim da documentacao
 
 Se quiser, posso gerar também:
 

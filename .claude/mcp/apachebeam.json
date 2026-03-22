@@ -1,0 +1,36 @@
+{
+  "name": "apachebeam",
+  "description": "Apache Beam MCP - Pipelines de dados unificados",
+  "version": "1.0.0",
+  "documentation": {
+    "official": "https://beam.apache.org/documentation/",
+    "python_sdk": "https://beam.apache.org/documentation/sdks/python/",
+    "programming_guide": "https://beam.apache.org/documentation/programming-guide/",
+    "transforms": "https://beam.apache.org/documentation/transforms/python/overview/",
+    "io_connectors": "https://beam.apache.org/documentation/io/connectors/",
+    "runners": "https://beam.apache.org/documentation/runners/capability-matrix/",
+    "dataflow_runner": "https://beam.apache.org/documentation/runners/dataflow/",
+    "api_reference": "https://beam.apache.org/releases/pydoc/current/",
+    "patterns": "https://beam.apache.org/documentation/patterns/overview/"
+  },
+  "tools": [
+    {
+      "name": "beam_run",
+      "description": "Executa pipelines Beam"
+    },
+    {
+      "name": "beam_validate",
+      "description": "Valida pipeline antes de executar"
+    },
+    {
+      "name": "beam_template",
+      "description": "Cria template de pipeline"
+    }
+  ],
+  "config": {
+    "runner": "DirectRunner",
+    "project": "",
+    "region": "",
+    "temp_location": ""
+  }
+}
