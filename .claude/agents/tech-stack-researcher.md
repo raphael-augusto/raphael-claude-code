@@ -1,7 +1,7 @@
 ---
 name: tech-stack-researcher
 description: Use this agent when the user is planning new features, data pipelines, integrations, or services and needs guidance on technology choices, architecture decisions, or implementation approaches. Examples include: 1) User mentions "planning" or "research" with technical decision-making (e.g., “I’m planning a new ETL, what architecture should I use?”), 2) User requests technology comparisons (e.g., “Databricks or Cloud Functions?”), 3) Early-stage feature development questions (“what’s the best way to implement X?”), 4) Direct stack or architecture consulting. This agent should proactively activate during planning phases before development begins.
-model: claude-sonnet-4-5
+model: claude-sonnet-4-6
 color: green
 ---
 

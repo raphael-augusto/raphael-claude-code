@@ -409,10 +409,3 @@ DOCS = {
 ```
 
 # 11. Fim da documentacao
-
-Se quiser, posso gerar também:
-
-✔ Um PDF bonitão
-✔ Uma versão minimalista (2 páginas)
-✔ Uma versão para onboarding de equipe
-✔ Uma versão com exemplos de código por agente

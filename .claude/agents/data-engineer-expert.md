@@ -1,7 +1,7 @@
 ---
 name: data-engineer-expert
 description: Use this agent when the user needs help building, optimizing, or planning ETL/ELT pipelines, data architectures, cloud strategies, SQL optimizations, or debugging issues across Python, Databricks, Azure, Snowflake, GCP, AWS, Spark, Apache Airflow, and SQL environments.
-model: claude-sonnet-4-5
+model: claude-sonnet-4-6
 color: blue
 ---
 
