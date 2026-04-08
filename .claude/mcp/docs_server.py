@@ -13,6 +13,8 @@ DOCS = {
         "storage": "https://cloud.google.com/storage/docs",
         "dataflow": "https://cloud.google.com/dataflow/docs",
         "pubsub": "https://cloud.google.com/pubsub/docs",
+        "cloudrun": "https://cloud.google.com/run/docs",
+        "cloudfunctions": "https://cloud.google.com/functions/docs",
     },
     "python": {
         "official": "https://docs.python.org/3/",
