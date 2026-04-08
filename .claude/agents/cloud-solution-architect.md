@@ -1,7 +1,7 @@
 ---
-name: cloud-solution-architectRESHOP_GROUPING_EXPIRATION_DATE
+name: cloud-solution-architect
 description: Use this agent when the user needs to design, review, optimize, or validate cloud architectures, multi-cloud strategies, integration patterns, networking, security, governance, cost optimization, scalability, resiliency, and platform decisions across Azure, AWS, GCP (Google Cloud), Databricks, Snowflake, Kubernetes, and modern data/application stacks.
-model: claude-sonnet-4-6 
+model: claude-sonnet-4-6
 color: purple
 ---
 

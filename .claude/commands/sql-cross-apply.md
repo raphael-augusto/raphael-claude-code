@@ -3,7 +3,7 @@ name: sql-cross-apply
 description: Rewrite complex SQL Server expressions into CROSS APPLY blocks with clear derived columns and proper comments.
 ---
 
-You are using the **sql-server-expert** agent.
+You are using the **sql-expert** agent.
 
 Goal:
 Given a SQL Server query or business rule, rewrite the logic so that:

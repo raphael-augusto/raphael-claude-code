@@ -3,7 +3,7 @@ name: sql-refactor
 description: Refactor SQL Server queries using CROSS APPLY, derived columns, clear conversions, and comments for readability.
 ---
 
-You are using the **sql-server-expert** agent.
+You are using the **sql-expert** agent.
 
 Goal:
 Refactor the provided SQL Server query to:
