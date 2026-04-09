@@ -76,6 +76,45 @@ Uma frase objetiva.
 - Nao crie helpers para uso unico
 - Sempre considere: memory/patterns.md, memory/decisions.md, memory/mistakes.md
 
+## Semantic Commits (Obrigatorio)
+
+Formato: `<type>(<scope>): <descricao>`
+
+Scope e opcional. Descricao em portugues, presente do indicativo, minuscula.
+
+### Types
+| Type | Quando usar |
+|------|-------------|
+| `feat` | Nova feature para o usuario |
+| `fix` | Correcao de bug |
+| `docs` | Alteracao em documentacao |
+| `style` | Formatacao, sem mudanca de logica |
+| `refactor` | Refatoracao sem mudar comportamento |
+| `test` | Adicao ou ajuste de testes |
+| `chore` | Tarefas de build, config, CI, deps |
+
+### Scopes comuns
+`bigquery`, `airflow`, `spark`, `etl`, `api`, `sql`, `gcp`, `azure`, `databricks`, `ci`, `mcp`, `claude`
+
+### Exemplos
+```
+feat(bigquery): adiciona particionamento por data na tabela orders
+fix(airflow): corrige timeout no dag de ingestao
+docs(claude): atualiza lista de agents no CLAUDE.md
+refactor(etl): simplifica transformacao bronze-to-silver
+chore(ci): atualiza versao do terraform no pipeline
+feat!: migra autenticacao para oauth2
+```
+
+### Breaking changes
+- Usar `!` apos type/scope: `feat!:` ou `feat(api)!:`
+- Corpo do commit deve explicar a quebra quando aplicavel
+
+### Regras
+- Nunca commit vago ("update", "fix", "ajuste", "add novas features")
+- Descricao deve explicar O QUE foi feito, nao COMO
+- Maximo 72 caracteres na primeira linha
+
 <!-- rtk-instructions v2 -->
 # RTK (Rust Token Killer) - Token-Optimized Commands
 
