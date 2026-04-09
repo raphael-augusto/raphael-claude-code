@@ -42,6 +42,10 @@ DOCS = {
         "delta": "https://docs.databricks.com/en/delta/index.html",
         "sql": "https://docs.databricks.com/en/sql/index.html",
     },
+    "airflow": {
+        "official": "https://airflow.apache.org/docs/",
+        "astronomer": "https://www.astronomer.io/docs/learn/overview"
+    }
 }
 
 
@@ -153,11 +157,11 @@ def handle_request(request: dict) -> dict:
                 },
                 {
                     "name": "get_doc",
-                    "description": "Busca documentacao de uma tecnologia (gcp, python, spark, beam, sql, databricks)",
+                    "description": "Busca documentacao de uma tecnologia (gcp, python, spark, beam, sql, databricks, airflow)",
                     "inputSchema": {
                         "type": "object",
                         "properties": {
-                            "tech": {"type": "string", "description": "Tecnologia (gcp, python, spark, beam, sql, databricks)"},
+                            "tech": {"type": "string", "description": "Tecnologia (gcp, python, spark, beam, sql, databricks, airflow)"},
                             "topic": {"type": "string", "description": "Topico especifico (opcional)"}
                         },
                         "required": ["tech"]
