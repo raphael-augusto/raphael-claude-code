@@ -78,9 +78,9 @@ Uma frase objetiva.
 
 ## Semantic Commits (Obrigatorio)
 
-Formato: `<type>(<scope>): <descricao>`
+Formato: `<type>: <descricao>`
 
-Scope e opcional. Descricao em portugues, presente do indicativo, minuscula.
+Descricao em portugues, presente do indicativo, minuscula.
 
 ### Types
 | Type | Quando usar |
@@ -93,21 +93,18 @@ Scope e opcional. Descricao em portugues, presente do indicativo, minuscula.
 | `test` | Adicao ou ajuste de testes |
 | `chore` | Tarefas de build, config, CI, deps |
 
-### Scopes comuns
-`bigquery`, `airflow`, `spark`, `etl`, `api`, `sql`, `gcp`, `azure`, `databricks`, `ci`, `mcp`, `claude`
-
 ### Exemplos
 ```
-feat(bigquery): adiciona particionamento por data na tabela orders
-fix(airflow): corrige timeout no dag de ingestao
-docs(claude): atualiza lista de agents no CLAUDE.md
-refactor(etl): simplifica transformacao bronze-to-silver
-chore(ci): atualiza versao do terraform no pipeline
+feat: adiciona particionamento por data na tabela orders
+fix: corrige timeout no dag de ingestao
+docs: atualiza lista de agents no CLAUDE.md
+refactor: simplifica transformacao bronze-to-silver
+chore: atualiza versao do terraform no pipeline
 feat!: migra autenticacao para oauth2
 ```
 
 ### Breaking changes
-- Usar `!` apos type/scope: `feat!:` ou `feat(api)!:`
+- Usar `!` apos type: `feat!:` ou `fix!:`
 - Corpo do commit deve explicar a quebra quando aplicavel
 
 ### Regras
