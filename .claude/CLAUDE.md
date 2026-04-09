@@ -104,7 +104,7 @@ feat!: migra autenticacao para oauth2
 ```
 
 ### Breaking changes
-- Usar `!` apos type: `feat!:` ou `fix!:`
+<!-- - Usar `!` apos type: `feat!:` ou `fix!:` -->
 - Corpo do commit deve explicar a quebra quando aplicavel
 
 ### Regras
