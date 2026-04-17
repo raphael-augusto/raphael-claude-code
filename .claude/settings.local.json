@@ -17,7 +17,8 @@
       "Bash(/tmp/final_audit.sh:*)",
       "Bash(bash /tmp/final_audit.sh)",
       "Bash(rtk git:*)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "Bash(python *)"
     ],
     "deny": [],
     "ask": []

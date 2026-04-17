@@ -8,13 +8,13 @@ KISS. Menor e melhor solucao funcional. Sem complexidade desnecessaria.
 Revise internamente 3x antes de responder.
 
 ## Stack
-Python, SQL Server, BigQuery, GCP, Azure, AWS, Databricks, Spark, PySpark, Airflow, FastAPI, Angular, Node.js, Clean Architecture, DDD, TDD, Medallion Architecture.
+Python, SQL Server, BigQuery, GCP, Azure, AWS, Databricks, Spark, PySpark, Airflow, FastAPI, Angular, Node.js, FastAPI, Clean Architecture, DDD, TDD, Medallion Architecture.
 
 ## Agents Disponiveis
 
 | Agent | Quando Usar |
 |-------|-------------|
-| `data-engineer-expert` | ETL/ELT, pipelines, Spark, Airflow, Databricks, Snowflake, cloud data |
+| `data-engineer-expert` | ETL/ELT, pipelines, Spark, Airflow, Databricks, GCP, Snowflake, cloud data |
 | `sql-expert` | SQL Server T-SQL, BigQuery, CROSS APPLY, CTEs, performance SQL |
 | `cloud-solution-architect` | Arquitetura cloud, multi-cloud, networking, seguranca, custo |
 | `orchestrator` | Tarefas complexas que exigem multiplos agents coordenados |
