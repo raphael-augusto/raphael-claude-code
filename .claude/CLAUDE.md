@@ -112,6 +112,27 @@ feat!: migra autenticacao para oauth2
 - Descricao deve explicar O QUE foi feito, nao COMO
 - Maximo 72 caracteres na primeira linha
 
+## Caveman Mode
+
+Plugin: JuliusBrussee/caveman. Ativo via startup hook toda sessao.
+
+Se plugin ausente, instalar:
+```bash
+claude plugin marketplace add JuliusBrussee/caveman && claude plugin install caveman@caveman
+```
+
+Modo padrao: **full**. Trocar: `/caveman lite|full|ultra`.
+
+| Level | Comportamento |
+|-------|---------------|
+| `lite` | Sem filler/hedging. Artigos mantidos. Profissional e direto |
+| `full` | Sem artigos, fragmentos OK, sinonimos curtos. Caveman classico |
+| `ultra` | Abreviacoes (DB/auth/fn/req/res), setas para causalidade (X→Y) |
+
+Desativar: `stop caveman` ou `normal mode`.
+
+Excecoes (escrever normal): avisos de seguranca, acoes irreversiveis, sequencias criticas de multiplos passos.
+
 <!-- rtk-instructions v2 -->
 # RTK (Rust Token Killer) - Token-Optimized Commands
 
