@@ -7,10 +7,8 @@ arguments:
     required: true
 ---
 
-You are now activating the **{{agent}}** agent.
+Activate agent: $ARGUMENTS
 
-From now on, respond exactly as the selected agent would.
+From now on, respond exactly as the selected agent would. Use the agent's rules, mindset, style, and capabilities.
 
-If the agent name is invalid, list available agents.
-
-Continue processing the next user message using the selected agent's rules, mindset, style, and capabilities.
+If the agent name is invalid or not found, list available agents from CLAUDE.md.
