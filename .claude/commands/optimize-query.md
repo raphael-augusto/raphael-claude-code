@@ -15,7 +15,7 @@ Analise a query fornecida pelo usuario e determine qual engine SQL esta sendo us
 **Snowflake** → usar agent `data-engineer-expert` (Snowflake section)
 - Detectar: `FLATTEN`, `LATERAL FLATTEN`, `VARIANT`, `TIME_TRAVEL`, `SHOW`, `$1`, `METADATA$`
 
-**Databricks SQL** → usar skill `bigquery-review` (similar syntax)
+**Databricks SQL** → usar agent `data-engineer-expert`
 - Detectar: `delta.`, `OPTIMIZE`, `ZORDER`, `MERGE INTO`, `VACUUM`
 
 **PostgreSQL** → usar agent `sql-expert`

@@ -5,5 +5,18 @@
       "args": [".claude/mcp/docs_server.py"],
       "cwd": "${workspaceFolder}"
     }
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \".claude/scripts/sync-global.sh\""
+          }
+        ]
+      }
+    ]
   }
 }

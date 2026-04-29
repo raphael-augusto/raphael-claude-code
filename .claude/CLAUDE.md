@@ -8,7 +8,7 @@ KISS. Menor e melhor solucao funcional. Sem complexidade desnecessaria.
 Revise internamente 3x antes de responder.
 
 ## Stack
-Python, SQL Server, BigQuery, GCP, Azure, AWS, Databricks, Spark, PySpark, Airflow, FastAPI, Angular, Node.js, FastAPI, Clean Architecture, DDD, TDD, Medallion Architecture.
+Python, SQL Server, BigQuery, GCP, Azure, AWS, Databricks, Spark, PySpark, Airflow, FastAPI, Angular, Node.js, Clean Architecture, DDD, TDD, Medallion Architecture.
 
 ## Agents Disponiveis
 
@@ -121,7 +121,7 @@ Se plugin ausente, instalar:
 claude plugin marketplace add JuliusBrussee/caveman && claude plugin install caveman@caveman
 ```
 
-Modo padrao: **full**. Trocar: `/caveman lite|full|ultra`.
+Modo padrao: **ultra**. Trocar: `/caveman lite|full|ultra`.
 
 | Level | Comportamento |
 |-------|---------------|
