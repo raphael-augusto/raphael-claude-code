@@ -1,24 +1,15 @@
 {
   "permissions": {
     "allow": [
-      "Bash(main.py)",
       "Bash(mkdir:*)",
       "Bash(poetry install:.:*)",
-      "Bash(pip install:./venv/*)",
       "Bash(pip install:venv/*)",
-      "Python(*)",
+      "Bash(pip install:./venv/*)",
+      "Bash(python *)",
       "Git(*)",
-      "Bash(grep -r \"use-agent\\\\|use agent\\\\|use skill\\\\|activate agent\" /Users/raphael/Documents/raphael-claude-code/.claude --include=*.md)",
       "Bash(grep:*)",
-      "Bash(echo \"\" echo \"1. Procurando ''''sql-server-expert'''' \\(deveria ser ''''sql-expert''''\\):\" grep -r \"sql-server-expert\" /Users/raphael/Documents/raphael-claude-code/.claude --include=\"*.md\" __NEW_LINE_95067e7c0b8cbbe9__ echo \"\" echo \"2. Procurando referências a agents inexistentes:\" grep -r \"agent:\\\\|Agent:\\\\|agente:\\\\|Agente:\" /Users/raphael/Documents/raphael-claude-code/.claude/commands --include=\"*.md\")",
-      "Bash(tr -d '`')",
-      "Bash(/tmp/verify.sh:*)",
-      "Bash(bash /tmp/verify.sh)",
-      "Bash(/tmp/final_audit.sh:*)",
-      "Bash(bash /tmp/final_audit.sh)",
       "Bash(rtk git:*)",
       "Bash(git:*)",
-      "Bash(python *)",
       "Bash(gh pr *)",
       "Bash(brew install *)",
       "Bash(gh auth *)"

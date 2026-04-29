@@ -50,21 +50,23 @@ DOCS = {
 
 
 class HTMLTextExtractor(HTMLParser):
+    SKIP_TAGS = {"script", "style", "nav", "footer", "header"}
+
     def __init__(self):
         super().__init__()
         self.text = []
-        self.skip = False
+        self._skip_depth = 0
 
     def handle_starttag(self, tag, attrs):
-        if tag in ("script", "style", "nav", "footer", "header"):
-            self.skip = True
+        if tag in self.SKIP_TAGS:
+            self._skip_depth += 1
 
     def handle_endtag(self, tag):
-        if tag in ("script", "style", "nav", "footer", "header"):
-            self.skip = False
+        if tag in self.SKIP_TAGS and self._skip_depth > 0:
+            self._skip_depth -= 1
 
     def handle_data(self, data):
-        if not self.skip:
+        if self._skip_depth == 0:
             text = data.strip()
             if text:
                 self.text.append(text)
@@ -115,22 +117,27 @@ def get_doc(tech: str, topic: str = None) -> dict:
 
 
 def search_docs(query: str, tech: str = None) -> dict:
-    """Busca por termo nas documentacoes."""
-    results = []
-    search_in = {tech: DOCS[tech]} if tech and tech in DOCS else DOCS
+    """Busca por termo nas documentacoes. Requer 'tech' para evitar timeout."""
+    if not tech:
+        return {
+            "error": "Parâmetro 'tech' obrigatório para evitar timeout. "
+                     f"Disponíveis: {list(DOCS.keys())}"
+        }
+    if tech not in DOCS:
+        return {"error": f"Tecnologia '{tech}' não encontrada. Disponíveis: {list(DOCS.keys())}"}
 
-    for t, topics in search_in.items():
-        for topic, url in topics.items():
-            content = fetch_url(url, max_chars=15000)
-            if query.lower() in content.lower():
-                idx = content.lower().find(query.lower())
-                snippet = content[max(0, idx-100):idx+300]
-                results.append({
-                    "tech": t,
-                    "topic": topic,
-                    "url": url,
-                    "snippet": f"...{snippet}..."
-                })
+    results = []
+    for topic, url in DOCS[tech].items():
+        content = fetch_url(url, max_chars=15000)
+        if query.lower() in content.lower():
+            idx = content.lower().find(query.lower())
+            snippet = content[max(0, idx-100):idx+300]
+            results.append({
+                "tech": tech,
+                "topic": topic,
+                "url": url,
+                "snippet": f"...{snippet}..."
+            })
 
     return {"query": query, "results": results[:5]}
 
@@ -169,14 +176,14 @@ def handle_request(request: dict) -> dict:
                 },
                 {
                     "name": "search_docs",
-                    "description": "Busca por termo nas documentacoes",
+                    "description": "Busca por termo nas documentacoes de uma tecnologia especifica",
                     "inputSchema": {
                         "type": "object",
                         "properties": {
                             "query": {"type": "string", "description": "Termo de busca"},
-                            "tech": {"type": "string", "description": "Filtrar por tecnologia (opcional)"}
+                            "tech": {"type": "string", "description": "Tecnologia obrigatoria (gcp, python, spark, beam, sql, databricks, airflow)"}
                         },
-                        "required": ["query"]
+                        "required": ["query", "tech"]
                     }
                 }
             ]

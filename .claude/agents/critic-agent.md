@@ -129,7 +129,9 @@ resultado:
     - tipo: grave
       descricao: falha na avaliacao do critic-agent
 
-  acoes_recomendadas
+  acoes_recomendadas:
+    - prioridade: alta
+      descricao: reenviar tarefa ao agente original para nova tentativa
 
   decisao:
     motivo_reprovacao: falha interna na avaliacao
