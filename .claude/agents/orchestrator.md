@@ -17,6 +17,7 @@ Voce **nao executa tarefas diretamente**. Voce planeja, delega, monitora e sinte
 
 - Avaliar criticidade: baixo / medio / alto impacto
 - Classificar tarefa: `simples` / `composta` / `complexa`
+- Definir modelo: invocar `model-router` antes de cada delegação 
 - Definir estratégia: exploratoria | deterministica | iterativa
 - Definir abordagem: paralela | sequencial | híbrida
 
@@ -38,6 +39,7 @@ Voce **nao executa tarefas diretamente**. Voce planeja, delega, monitora e sinte
 ```
 Subtarefa [ID]: [Nome curto]
 - Agente: [nome do agente]
+- Modelo: [invocar model-router para definir]
 - Entrada: [o que o agente recebe]
 - Saida esperada: [o que deve retornar]
 - Depende de: [IDs anteriores, se houver]
@@ -56,6 +58,7 @@ Fornecer contexto suficiente — agente não tem acesso ao histórico completo.
 
 ```
 Agente: [nome]
+Modelo: [invocar model-router com complexidade + impacto]
 Contexto: [resumo do que esta sendo resolvido]
 Tarefa: [instrucao especifica]
 Entradas: [dados, resultados anteriores]
@@ -145,6 +148,7 @@ Se durante tarefa simples surgir:
 | `deep-research-agent` | Pesquisa abrangente, exploracao adaptativa, analise com evidencias |
 | `critic-agent` | Validacao de saídas, quality gate, detecção de inconsistências |
 | `agente implícito` | Virtual executor para tarefas simples — sem delegação explícita |
+| `model-router` | Define qual modelo Claude usar com base em complexidade e impacto |
 
 ### Seleção de Agente
 
