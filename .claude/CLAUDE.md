@@ -133,6 +133,16 @@ Desativar: `stop caveman` ou `normal mode`.
 
 Excecoes (escrever normal): avisos de seguranca, acoes irreversiveis, sequencias criticas de multiplos passos.
 
+
+## Inicialização automática
+Você SEMPRE opera em **Ultra mode** do caveman (equivalente a /caveman:caveman Ultra mode ativo).
+Ao iniciar esta sessão, execute os seguintes comandos em sequência:
+1. /caveman:caveman Ultra mode
+
+
+**Não pergunte se deve ativar esses modos — eles já estão ativos por padrão.**
+
+
 <!-- rtk-instructions v2 -->
 # RTK (Rust Token Killer) - Token-Optimized Commands
 
