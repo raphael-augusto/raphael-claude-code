@@ -69,7 +69,4 @@ Templates prontos em `.claude/snippets/`:
 | `glossary.md` | Glossario de termos do projeto |
 
 ## Regras
-- Nao explique o que mudou, resuma
-- Nao adicione features nao solicitadas
-- Nao crie helpers para uso unico
 - Sempre considere: memory/patterns.md, memory/decisions.md, memory/mistakes.md

@@ -91,48 +91,6 @@ Always think like an enterprise architect with strong hands-on engineering depth
 
 ---
 
-## Cloud Reference: Azure
-
-**Networking:** VNet, Subnets, NSG, UDR, Azure Firewall, Private Endpoint, Private Link, VPN Gateway, ExpressRoute, Load Balancer, Application Gateway, Front Door, Traffic Manager, DNS Zones
-
-**Identity & Security:** Entra ID, Managed Identities, RBAC, Conditional Access, Key Vault, Defender for Cloud, Azure Policy, Landing Zones, Sentinel
-
-**Compute:** Virtual Machines, VM Scale Sets, App Service, Functions, AKS, Container Apps, Logic Apps, Batch
-
-**Data & Integration:** Storage Account, ADLS Gen2, Azure SQL, SQL Managed Instance, Cosmos DB, Synapse Analytics, Event Hubs, Service Bus, Data Factory, Databricks, API Management
-
-**Observability:** Azure Monitor, Log Analytics, Application Insights, Alerts, Diagnostic Settings
-
----
-
-## Cloud Reference: AWS
-
-**Networking:** VPC, Subnets, Route Tables, Security Groups, NACL, NAT Gateway, Internet Gateway, Transit Gateway, Route 53, ALB / NLB, CloudFront, Global Accelerator
-
-**Identity & Security:** IAM, IAM Roles, SCP, AWS Organizations, KMS, Secrets Manager, Parameter Store, GuardDuty, Security Hub, Macie, CloudTrail, AWS Config
-
-**Compute:** EC2, Auto Scaling Groups, ECS, EKS, Lambda, Fargate, Batch
-
-**Data & Integration:** S3, RDS, Aurora, DynamoDB, Redshift, MSK (Kafka), Kinesis, SQS, SNS, EventBridge, Glue, Athena, Step Functions, API Gateway
-
-**Observability:** CloudWatch, X-Ray, CloudTrail, OpenSearch, Cost Explorer, Trusted Advisor
-
----
-
-## Cloud Reference: GCP (Google Cloud)
-
-**Networking:** VPC, Subnets, Firewall Rules, Cloud NAT, Cloud Router, Cloud DNS, Cloud Load Balancing, Cloud CDN, Cloud Interconnect, Cloud VPN
-
-**Identity & Security:** IAM, Service Accounts, Workload Identity Federation, Secret Manager, Cloud KMS, Organization Policies, VPC Service Controls, Security Command Center, Cloud Armor, Access Context Manager
-
-**Compute:** Compute Engine, GKE (Google Kubernetes Engine), Cloud Run, Cloud Functions, App Engine, Batch, Vertex AI
-
-**Data & Integration:** Cloud Storage, BigQuery, Bigtable, Spanner, Firestore, Pub/Sub, Dataflow, Dataproc, Cloud Composer, Workflows, Apigee, Datastream, Looker
-
-**Observability:** Cloud Monitoring, Cloud Logging, Error Reporting, Cloud Trace, Cloud Profiler, Recommender, Cost Management
-
----
-
 ## Kubernetes & Platform Layer
 
 **Core:** Cluster architecture, Node pools, Namespaces, Ingress, Services, ConfigMaps, Secrets, HPA / VPA, Pod Disruption Budgets, Affinity / anti-affinity, Resource Quotas, Network Policies
