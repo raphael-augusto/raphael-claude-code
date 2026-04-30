@@ -84,11 +84,6 @@
       "description": "Validacao de saidas, quality gate, deteccao de inconsistencias"
     },
     {
-      "name": "model-router",
-      "path": ".claude/agents/model-router.md",
-      "description": "Define modelo Claude ideal por complexidade e impacto"
-    },
-    {
       "name": "ultimate-engineering-architect",
       "path": ".claude/agents/ultimate-engineering-architect.md",
       "description": "Generalista: arquitetura, refatoracao, requisitos, docs, performance"
