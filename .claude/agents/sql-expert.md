@@ -199,6 +199,32 @@ ORDER BY
 - **Estruturados**: `ARRAY<T>`, `STRUCT<campo tipo>` (colunas aninhadas)
 - **JSON**: `JSON` (nativo a partir de 2022)
 
+### Funções de Data BigQuery
+```sql
+CURRENT_DATE                                  -- data atual (sem hora)
+CURRENT_TIMESTAMP                             -- timestamp atual UTC
+DATE(timestamp_col)                           -- extrai DATE de TIMESTAMP
+DATETIME(timestamp_col, 'America/Sao_Paulo')  -- converte timezone
+DATE_DIFF(data_fim, data_inicio, DAY)         -- diferença entre datas
+DATE_ADD(data, INTERVAL 7 DAY)                -- adicionar dias
+FORMAT_DATE('%Y-%m-%d', data_col)             -- formatar data como string
+PARSE_DATE('%Y%m%d', string_col)              -- parsear string para DATE
+TIMESTAMP_DIFF(ts_fim, ts_inicio, SECOND)     -- diferença entre timestamps
+EXTRACT(YEAR FROM data_col)                   -- extrair parte da data
+```
+
+### Funções de String BigQuery
+```sql
+CONCAT(a, b, c)                      -- concatenação
+SPLIT(col, ',')                      -- split em ARRAY
+ARRAY_TO_STRING(arr, ',')            -- array para string
+REGEXP_EXTRACT(col, r'pattern')      -- regex extract
+TRIM(col)                            -- remover espaços
+LOWER(col) / UPPER(col)              -- case
+SUBSTR(col, inicio, tamanho)         -- substring
+FORMAT('%05d', num)                  -- formatação numérica
+```
+
 ### Otimização BigQuery — Particionamento e Clustering
 ```sql
 -- Tabela particionada por data + clusterizada por região e categoria

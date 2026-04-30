@@ -8,27 +8,32 @@
     {
       "name": "new-task",
       "path": ".claude/commands/new-task.md",
-      "description": "Analisa complexidade e cria plano de implementacao"
+      "description": "Analisa complexidade e cria plano de implementacao",
+      "agent": "ultimate-engineering-architect"
     },
     {
       "name": "analyze-pipeline",
       "path": ".claude/commands/analyze-pipeline.md",
-      "description": "Detecta tipo de pipeline e chama skill apropriada"
+      "description": "Detecta tipo de pipeline e chama skill apropriada",
+      "agent": "data-engineer-expert"
     },
     {
       "name": "optimize-query",
       "path": ".claude/commands/optimize-query.md",
-      "description": "Detecta engine SQL e otimiza query automaticamente"
+      "description": "Detecta engine SQL e otimiza query automaticamente",
+      "agent": "sql-expert"
     },
     {
       "name": "sql-refactor",
       "path": ".claude/commands/sql-refactor.md",
-      "description": "Refatora SQL com CROSS APPLY, CTEs e legibilidade"
+      "description": "Refatora SQL com CROSS APPLY, CTEs e legibilidade",
+      "agent": "sql-expert"
     },
     {
       "name": "sql-cross-apply",
       "path": ".claude/commands/sql-cross-apply.md",
-      "description": "Converte expressoes complexas em CROSS APPLY"
+      "description": "Converte expressoes complexas em CROSS APPLY",
+      "agent": "sql-expert"
     },
     {
       "name": "use",

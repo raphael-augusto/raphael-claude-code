@@ -1,82 +1,85 @@
 ---
-description: Analisa complexidade da tarefa e cria plano de implementacao acionavel
+description: Analyze task complexity and create actionable implementation plan
 model: claude-sonnet-4-6
 ---
 
-Analise a tarefa a seguir e crie um plano de implementação claro e acionável.
+Analyze the following task and create a clear, actionable implementation plan.
 
-## Tarefa
+## Task
 
 $ARGUMENTS
 
-## Framework de Análise
+## Analysis Framework
 
-### 1. Decomposição
-- Entender requisitos
-- Identificar dependências
-- Listar arquivos/componentes afetados
-- Estimar complexidade (Pequena/Média/Grande)
+### 1. **Task Breakdown**
+- Understand requirements
+- Identify dependencies
+- List affected files/components
+- Estimate complexity (Small/Medium/Large)
 
-### 2. Estimativa de Tempo
-- **Pequena**: 1-2 horas (bug simples, ajuste menor)
-- **Média**: Meio dia a 1 dia (novo componente, endpoint)
-- **Grande**: 2-5 dias (feature complexa, múltiplas integrações)
-- **Muito Grande**: 1+ semana (refactor maior, novo subsistema)
+### 2. **Time Estimation**
+- **Small**: 1-2 hours (simple bug fix, minor feature)
+- **Medium**: Half day to 1 day (new component, API endpoint)
+- **Large**: 2-5 days (complex feature, multiple integrations)
+- **Very Large**: 1+ week (major refactor, new subsystem)
 
-### 3. Avaliação de Riscos
-Identificar bloqueadores potenciais:
-- Dependências desconhecidas
-- Limitações de API
-- Necessidade de migração de dados
+### 3. **Risk Assessment**
+Identify potential blockers:
+- Unknown dependencies
+- API limitations
+- Data migration needs
 - Breaking changes
-- Problemas com serviços externos
+- Third-party service issues
 
-### 4. Passos de Implementação
+### 4. **Implementation Steps**
 
-Criar etapas sequenciais e lógicas:
-1. Setup/preparação
-2. Mudanças de pipeline / modelo de dados
-3. Lógica SQL / transformação
-4. Testes (unitário + integração)
-5. Deploy / config CI-CD
+Create sequential, logical steps:
+1. Setup/preparation
+2. Pipeline / data model changes
+3. SQL / transformation logic
+4. Testing (unit + integration)
+5. Deploy / CI-CD config
 
-### 5. Critérios de Sucesso
+### 5. **Success Criteria**
 
-Definir "pronto":
-- Feature funciona conforme especificado
-- Testes passam
-- Sem regressões
-- Code review feito
-- Documentado
+Define "done":
+- Feature works as specified
+- Tests pass
+- No regressions
+- Code reviewed
+- Documented
 
-## Formato de Saída
+## Output Format
 
-### Análise da Tarefa
-- **Tipo**: [Bug Fix / Feature / Refactor / Infraestrutura]
-- **Complexidade**: [Pequena / Média / Grande / Muito Grande]
-- **Tempo Estimado**: X horas/dias
-- **Prioridade**: [Alta / Média / Baixa]
+### Task Analysis
+- **Type**: [Bug Fix / Feature / Refactor / Infrastructure]
+- **Complexity**: [Small / Medium / Large / Very Large]
+- **Estimated Time**: X hours/days
+- **Priority**: [High / Medium / Low]
 
-### Plano de Implementação
+### Implementation Plan
 
-**Fase 1: [Nome]** (Estimativa de tempo)
-- [ ] Passo 1
-- [ ] Passo 2
+**Phase 1: [Name]** (Time estimate)
+- [ ] Step 1
+- [ ] Step 2
 
-**Fase 2: [Nome]** (Estimativa de tempo)
-- [ ] Passo 3
-- [ ] Passo 4
+**Phase 2: [Name]** (Time estimate)
+- [ ] Step 3
+- [ ] Step 4
 
-### Estratégia de Testes
-- Testes unitários para X
-- Testes de integração para Y
-- Passos de teste manual
 
-### Problemas Potenciais
-- Problema 1 e mitigação
-- Problema 2 e mitigação
+### Testing Strategy
+- Unit tests for X
+- Integration tests for Y
+- Manual testing steps
 
-### Próximos Passos
-1. Começar com Fase 1, Passo 1
-2. Testar incrementalmente
-3. Commitar frequentemente
+### Potential Issues
+- Issue 1 and mitigation
+- Issue 2 and mitigation
+
+### Next Steps
+1. Start with Phase 1, Step 1
+2. Test incrementally
+3. Commit often
+
+Provide a clear, solo-developer-friendly plan that breaks down complex tasks into manageable steps.
