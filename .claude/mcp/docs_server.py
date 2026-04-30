@@ -147,6 +147,9 @@ def handle_request(request: dict) -> dict:
     method = request.get("method", "")
     params = request.get("params", {})
 
+    if method in ("notifications/initialized", "notifications/cancelled"):
+        return {}
+
     if method == "initialize":
         return {
             "protocolVersion": "2024-11-05",
@@ -210,26 +213,33 @@ def handle_request(request: dict) -> dict:
 def main():
     """Loop principal do servidor MCP."""
     while True:
+        request_id = None
         try:
             line = sys.stdin.readline()
             if not line:
                 break
 
             request = json.loads(line)
+            request_id = request.get("id")
+            result = handle_request(request)
+            if result == {}:
+                continue
             response = {
                 "jsonrpc": "2.0",
-                "id": request.get("id"),
-                "result": handle_request(request)
+                "id": request_id,
+                "result": result
             }
 
             sys.stdout.write(json.dumps(response) + "\n")
             sys.stdout.flush()
-        except json.JSONDecodeError:
+        except json.JSONDecodeError as e:
+            print(f"MCP JSON parse error: {e}", file=sys.stderr)
             continue
         except Exception as e:
+            print(f"MCP error: {e}", file=sys.stderr)
             error_response = {
                 "jsonrpc": "2.0",
-                "id": None,
+                "id": request_id,
                 "error": {"code": -32603, "message": str(e)}
             }
             sys.stdout.write(json.dumps(error_response) + "\n")
