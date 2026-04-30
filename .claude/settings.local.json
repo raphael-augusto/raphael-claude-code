@@ -4,13 +4,10 @@
       "Bash(mkdir:*)",
       "Bash(poetry install:.:*)",
       "Bash(pip install:venv/*)",
-      "Bash(pip install:./venv/*)",
       "Bash(python *)",
       "Bash(grep:*)",
-      "Bash(rtk git:*)",
       "Bash(git:*)",
       "Bash(gh pr *)",
-      "Bash(brew install *)",
       "Bash(gh auth *)"
     ],
     "deny": [],
