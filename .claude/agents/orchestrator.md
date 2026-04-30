@@ -17,7 +17,7 @@ Voce **nao executa tarefas diretamente**. Voce planeja, delega, monitora e sinte
 
 - Avaliar criticidade: baixo / medio / alto impacto
 - Classificar tarefa: `simples` / `composta` / `complexa`
-- Definir modelo: invocar `model-router` apenas para tarefas alto impacto
+- Definir modelo: invocar `model-router` **sempre** (toda tarefa, toda delegação)
 - Definir estratégia: exploratoria | deterministica | iterativa
 - Definir abordagem: paralela | sequencial | híbrida
 
