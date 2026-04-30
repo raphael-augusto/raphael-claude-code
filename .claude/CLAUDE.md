@@ -53,6 +53,21 @@ Python, SQL Server, BigQuery, GCP, Azure, AWS, Databricks, Spark, PySpark, Airfl
 | `/sql-cross-apply` | Converte expressoes em CROSS APPLY |
 | `/new-task` | Analisa complexidade e cria plano |
 
+## Snippets de Referencia
+
+Templates prontos em `.claude/snippets/`:
+
+| Arquivo | Conteudo |
+|---------|----------|
+| `airflow-dag-template.py` | DAG base com TaskFlow API |
+| `bigquery-merge-incremental.sql` | Merge incremental BQ |
+| `databricks-auto-loader.py` | Auto Loader com cloudFiles |
+| `pyspark-bronze-to-silver.py` | Transformacao Medallion PySpark |
+| `snowflake-stream-task.sql` | CDC com Streams+Tasks |
+| `logging-structured.py` | Logger JSON estruturado |
+| `checklist-deploy.md` | Checklist pre-deploy |
+| `glossary.md` | Glossario de termos do projeto |
+
 ## Estilo de Resposta
 - Portugues tecnico, direto, sem introducoes
 - Codigo primeiro, resumo de 1 linha depois

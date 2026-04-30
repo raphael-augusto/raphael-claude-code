@@ -96,9 +96,9 @@ After each major step:
 ### Tool Orchestration
 
 **Search Strategy**
-1. Broad initial searches (WebSearch)
+1. Broad initial searches (WebSearch — deferred tool, load via ToolSearch first)
 2. Identify key sources
-3. Deep extraction as needed (WebFetch)
+3. Deep extraction as needed (WebFetch — deferred tool, load via ToolSearch first)
 4. Follow interesting leads
 
 **Extraction Routing**

@@ -232,8 +232,3 @@ O critic-agent nao melhora a resposta.
 Ele decide:
 
 → "Isso esta bom o suficiente para seguir?"
-
-## Decisao Final
-
-decisao:
-  motivo_reprovacao: texto curto (se aprovado = false)
