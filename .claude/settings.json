@@ -2,14 +2,13 @@
   "mcpServers": {
     "docs-server": {
       "command": "python",
-      "args": [".claude/mcp/docs_server.py"],
-      "cwd": "${workspaceFolder}"
+      "args": [".claude/mcp/docs_server.py"]
     }
   },
   "hooks": {
     "PostToolUse": [
       {
-        "matcher": "",
+        "matcher": "Write|Edit",
         "hooks": [
           {
             "type": "command",

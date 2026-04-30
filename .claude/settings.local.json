@@ -6,7 +6,6 @@
       "Bash(pip install:venv/*)",
       "Bash(pip install:./venv/*)",
       "Bash(python *)",
-      "Git(*)",
       "Bash(grep:*)",
       "Bash(rtk git:*)",
       "Bash(git:*)",
