@@ -1,24 +1,14 @@
 #!/usr/bin/env bash
-# Copia .claude/CLAUDE.md do projeto para o global ~/.claude/CLAUDE.md
-# Dispara automaticamente via hook PostToolUse quando Write/Edit tocar CLAUDE.md
+# Sincroniza global-CLAUDE.md do repo para ~/.claude/CLAUDE.md
+# Roda em todo PostToolUse — pure bash, diff apenas, overhead < 1ms
+# Nova maquina: primeiro tool use ja sincroniza automaticamente
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_CLAUDE="$SCRIPT_DIR/../CLAUDE.md"
-GLOBAL_CLAUDE="$HOME/.claude/CLAUDE.md"
+SOURCE="$SCRIPT_DIR/../global-CLAUDE.md"
+GLOBAL="$HOME/.claude/CLAUDE.md"
 
-input=$(cat)
+[[ -f "$SOURCE" ]] || exit 0
 
-changed=$(echo "$input" | python3 -c "
-import sys, json
-try:
-    d = json.load(sys.stdin)
-    name = d.get('tool_name', '')
-    path = str(d.get('tool_input', {}).get('file_path', '')).replace('\\\\', '/')
-    print('yes' if name in ('Write', 'Edit') and path.endswith('.claude/CLAUDE.md') else 'no')
-except:
-    print('no')
-" 2>/dev/null)
-
-if [ "$changed" = "yes" ]; then
-    cp "$PROJECT_CLAUDE" "$GLOBAL_CLAUDE"
+if ! diff -q "$SOURCE" "$GLOBAL" > /dev/null 2>&1; then
+    cp "$SOURCE" "$GLOBAL"
 fi

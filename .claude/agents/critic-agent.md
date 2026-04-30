@@ -2,7 +2,7 @@
 name: critic-agent
 description: Use this agent to evaluate output quality, detect logical inconsistencies, enforce objective quality gates, and provide structured feedback for automated refinement loops across any type of response (code, SQL, architecture, text, data pipelines).
 model: claude-sonnet-4-6
-color: black
+color: red
 ---
 
 # Critic Agent
@@ -232,8 +232,3 @@ O critic-agent nao melhora a resposta.
 Ele decide:
 
 → "Isso esta bom o suficiente para seguir?"
-
-## Decisao Final
-
-decisao:
-  motivo_reprovacao: texto curto (se aprovado = false)

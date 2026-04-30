@@ -2,6 +2,7 @@
 name: Padroes Tecnicos Validados
 description: Padroes de codigo e engenharia validados pelo usuario para uso consistente no projeto
 type: feedback
+last_updated: 2026-04-30
 ---
 
 - Usar Spark/PySpark para grandes volumes — evitar Pandas em producao

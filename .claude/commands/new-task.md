@@ -35,11 +35,10 @@ Identify potential blockers:
 
 Create sequential, logical steps:
 1. Setup/preparation
-2. Backend changes
-3. Frontend changes
-4. Testing
-5. Documentation
-6. Deployment
+2. Pipeline / data model changes
+3. SQL / transformation logic
+4. Testing (unit + integration)
+5. Deploy / CI-CD config
 
 ### 5. **Success Criteria**
 

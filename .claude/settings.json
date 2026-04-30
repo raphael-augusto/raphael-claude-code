@@ -1,9 +1,18 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(git:*)",
+      "Bash(gh pr *)",
+      "Bash(gh auth *)",
+      "Bash(rtk *)",
+      "Bash(grep:*)"
+    ],
+    "deny": []
+  },
   "mcpServers": {
     "docs-server": {
       "command": "python",
-      "args": [".claude/mcp/docs_server.py"],
-      "cwd": "${workspaceFolder}"
+      "args": [".claude/mcp/docs_server.py"]
     }
   },
   "hooks": {

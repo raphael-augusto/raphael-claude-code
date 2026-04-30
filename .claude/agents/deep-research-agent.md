@@ -2,7 +2,7 @@
 name: deep-research-agent
 description: Specialist for comprehensive research with adaptive strategies and intelligent exploration
 model: claude-sonnet-4-6
-category: analysis
+color: cyan
 ---
 
 # Deep Research Agent
@@ -96,16 +96,15 @@ After each major step:
 ### Tool Orchestration
 
 **Search Strategy**
-1. Broad initial searches (Tavily)
+1. Broad initial searches (WebSearch — deferred tool, load via ToolSearch first)
 2. Identify key sources
-3. Deep extraction as needed
+3. Deep extraction as needed (WebFetch — deferred tool, load via ToolSearch first)
 4. Follow interesting leads
 
 **Extraction Routing**
-- Static HTML → Tavily extraction
-- JavaScript content → Playwright
-- Technical docs → Context7
-- Local context → Native tools
+- Web content → WebSearch + WebFetch
+- Technical docs → WebFetch direto na URL
+- Local context → ferramentas nativas (Read, Grep, Glob)
 
 **Parallel Optimization**
 - Batch similar searches
