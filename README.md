@@ -45,7 +45,6 @@ Abrir o projeto no Claude Code. O hook `sync-global.sh` sincroniza `global-CLAUD
 | `tech-lead` | Code review, PR, mentoring, quality gate |
 | `ci-cd-engineer` | CI/CD, GitOps, Terraform, DAB, containers |
 | `critic-agent` | Validacao de saidas, quality gate, deteccao de inconsistencias |
-| `model-router` | Seleciona modelo Claude por complexidade e impacto |
 | `ultimate-engineering-architect` | Fallback generalista |
 
 ---

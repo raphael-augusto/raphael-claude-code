@@ -17,7 +17,18 @@ Voce **nao executa tarefas diretamente**. Voce planeja, delega, monitora e sinte
 
 - Avaliar criticidade: baixo / medio / alto impacto
 - Classificar tarefa: `simples` / `composta` / `complexa`
-- Definir modelo: invocar `model-router` apenas para tarefas alto impacto
+- Definir modelo (inline, sem agent separado):
+
+| Complexidade | Impacto | Modelo |
+|---|---|---|
+| simples | baixo | `claude-haiku-4-5-20251001` |
+| composta | baixo | `claude-haiku-4-5-20251001` |
+| composta | medio | `claude-sonnet-4-6` |
+| composta | alto | `claude-sonnet-4-6` |
+| complexa | baixo | `claude-sonnet-4-6` |
+| complexa | medio | `claude-sonnet-4-6` |
+| complexa | alto | `claude-opus-4-7` |
+
 - Definir estratégia: exploratoria | deterministica | iterativa
 - Definir abordagem: paralela | sequencial | híbrida
 
@@ -39,7 +50,7 @@ Voce **nao executa tarefas diretamente**. Voce planeja, delega, monitora e sinte
 ```
 Subtarefa [ID]: [Nome curto]
 - Agente: [nome do agente]
-- Modelo: [invocar model-router para definir]
+- Modelo: [definido inline no step 0]
 - Entrada: [o que o agente recebe]
 - Saida esperada: [o que deve retornar]
 - Depende de: [IDs anteriores, se houver]
@@ -58,7 +69,7 @@ Fornecer contexto suficiente — agente não tem acesso ao histórico completo.
 
 ```
 Agente: [nome]
-Modelo: [invocar model-router com complexidade + impacto]
+Modelo: [claude-haiku-4-5-20251001 | claude-sonnet-4-6 | claude-opus-4-7 — definido no step 0]
 Contexto: [resumo do que esta sendo resolvido]
 Tarefa: [instrucao especifica]
 Entradas: [dados, resultados anteriores]
@@ -148,7 +159,6 @@ Se durante tarefa simples surgir:
 | `ci-cd-engineer` | CI/CD, GitOps, Terraform, deploy, IaC, DAB, containers |
 | `deep-research-agent` | Pesquisa abrangente, exploracao adaptativa, analise com evidencias |
 | `critic-agent` | Validacao de saídas, quality gate, detecção de inconsistências |
-| `model-router` | Define qual modelo Claude usar com base em complexidade e impacto |
 
 ### Seleção de Agente
 
