@@ -20,7 +20,8 @@ Python, SQL Server, BigQuery, GCP, Azure, AWS, Databricks, Spark, PySpark, Airfl
 | `orchestrator` | Tarefas complexas que exigem multiplos agents coordenados |
 | `deep-research-agent` | Pesquisa profunda, investigacao tecnica, analise com evidencias |
 | `tech-lead` | Code review, PR, mentoring, padronizacao, quality gate |
-| `ci-cd-engineer` | CI/CD, GitOps, Terraform, deploy, IaC, DAB, containers |
+| `ci-cd-engineer` | CI/CD, GitOps, Terraform, deploy, IaC, DAB, containers, automacao |
+| `powerbi-expert` | Power BI — DAX, modelagem, Power Query, relatorios, RLS |
 | `ultimate-engineering-architect` | Fallback generalista, tarefas que nao encaixam em specialist |
 
 ## Workflow Agent-First
@@ -32,26 +33,48 @@ Python, SQL Server, BigQuery, GCP, Azure, AWS, Databricks, Spark, PySpark, Airfl
 
 ## Skills Disponiveis
 
+### Data Engineering
 | Skill | Dominio |
 |-------|---------|
-| `bigquery-review` | Review de queries BigQuery |
-| `airflow-investigator` | Falhas em DAGs Airflow/Composer |
+| `airflow-debug` | Falhas em DAGs Airflow / Cloud Composer |
 | `pyspark-optimizer` | Performance PySpark/Spark |
-| `dbt-reviewer` | Review de modelos dbt |
-| `medallion-validator` | Validacao Medallion Architecture |
-| `etl-architecture` | Arquitetura ETL/ELT |
-| `gcp-function-debug` | Debug Cloud Functions/Run |
-| `sqlserver-performance` | Performance SQL Server |
+| `databricks-optimizer` | DLT, Unity Catalog, Auto Loader, DAB, custo de cluster |
+| `snowflake-optimizer` | Warehouse, Streams+Tasks, Snowpark, clustering, custo |
+| `aws-data-debug` | Glue, EMR, Kinesis, Redshift, Athena, Step Functions |
+| `dbt-review` | Revisao de modelos dbt |
+| `etl-design` | Arquitetura ETL/ELT e validacao Medallion (Bronze/Silver/Gold) |
+
+### SQL
+| Skill | Dominio |
+|-------|---------|
+| `sqlserver-optimizer` | Performance e otimizacao SQL Server |
+| `bigquery-optimizer` | Performance e custo BigQuery |
+| `sql-refactor` | Refatoracao SQL Server com CROSS APPLY e CTEs |
+
+### Cloud / Infra
+| Skill | Dominio |
+|-------|---------|
+| `gcp-debug` | Cloud Functions / Cloud Run |
+| `cloud-architecture-review` | Review de arquitetura cloud existente |
+| `terraform-review` | Review de codigo Terraform |
+| `kubernetes-review` | Manifests K8s, pods, RBAC, seguranca |
+| `github-actions-debug` | Debug de workflows GitHub Actions |
+| `docker-debug` | Dockerfile, docker-compose, build/runtime |
+| `n8n-design` | Automacoes e integracoes n8n |
+
+### Power BI
+| Skill | Dominio |
+|-------|---------|
+| `powerbi-dax-optimizer` | DAX lento ou incorreto |
+| `powerbi-model-review` | Modelo, relacionamentos, schema |
+| `powerbi-powerquery-optimizer` | Refresh lento, query folding, erros M |
+| `powerbi-report-review` | Design, UX, RLS, performance de relatorio |
 
 ## Commands
 
 | Comando | Funcao |
 |---------|--------|
-| `/analyze-pipeline` | Detecta tipo e chama skill apropriada |
-| `/optimize-query` | Detecta engine SQL e otimiza |
-| `/sql-refactor` | Refatora SQL com CROSS APPLY e CTEs |
-| `/sql-cross-apply` | Converte expressoes em CROSS APPLY |
-| `/new-task` | Analisa complexidade e cria plano |
+| `/sql-refactor` | Refatora SQL Server com CROSS APPLY e CTEs |
 
 ## Snippets de Referencia
 

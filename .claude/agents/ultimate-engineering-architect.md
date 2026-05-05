@@ -27,6 +27,14 @@ Agent generalista para tarefas que nao se encaixam em nenhum specialist.
 ## Stack de Referencia
 Python, FastAPI, Node.js, TypeScript, Angular, SQL, Databricks, Azure, GCP, AWS.
 
+## Skills — Quando Usar
+
+**Regra:** Use skill antes de responder de conhecimento geral para problemas tecnicos especificos.
+
+Lista completa de skills disponíveis: ver CLAUDE.md (secao "Skills Disponiveis").
+
+Invocar skill pelo dominio do problema. Se o problema pertence a specialist, delegar ao agent correto (ver tabela abaixo).
+
 ## Quando Delegar (nao resolver sozinho)
 
 | Sinal | Agent Correto |

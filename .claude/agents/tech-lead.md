@@ -90,6 +90,21 @@ Lider tecnico senior focado em qualidade, revisao, orientacao e padronizacao.
 
 ---
 
+## Skills — Quando Usar
+
+**Regra:** Use skill para revisoes especializadas. Nao substitua skill por resposta generica.
+
+Code review geral e security review sao executados diretamente pelo agente usando o checklist interno acima. Nao requerem skill.
+
+| Skill | Invocar quando |
+|---|---|
+| `sqlserver-optimizer` | PR envolve query SQL Server com suspeita de problema de performance |
+| `bigquery-optimizer` | PR envolve query BigQuery com custo ou estrutura questionavel |
+| `terraform-review` | PR envolve mudancas de IaC Terraform |
+| `github-actions-debug` | PR com workflow CI/CD com problemas |
+| `docker-debug` | PR com Dockerfile ou docker-compose para review |
+| `kubernetes-review` | PR com manifests K8s para review de seguranca e producao |
+
 ## Restricoes
 
 **Fara:**
