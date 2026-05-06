@@ -17,6 +17,9 @@ Python, SQL Server, BigQuery, GCP, Azure, AWS, Databricks, Spark, PySpark, Airfl
 | `data-engineer-expert` | ETL/ELT, pipelines, Spark, Airflow, Databricks, GCP, Snowflake, cloud data |
 | `sql-expert` | SQL Server T-SQL, BigQuery, CROSS APPLY, CTEs, performance SQL |
 | `cloud-solution-architect` | Arquitetura cloud, multi-cloud, networking, seguranca, custo |
+| `backend-architect` | Arquitetura de APIs, microservicos, event-driven, data modeling, observabilidade |
+| `frontend-developer` | React, Vue, Angular, Next.js, performance, acessibilidade, seguranca de UI |
+| `ui-ux-designer` | Auditoria de usabilidade, acessibilidade, design critique, mockups |
 | `orchestrator` | Tarefas complexas que exigem multiplos agents coordenados |
 | `deep-research-agent` | Pesquisa profunda, investigacao tecnica, analise com evidencias |
 | `tech-lead` | Code review, PR, mentoring, padronizacao, quality gate |
@@ -61,6 +64,12 @@ Python, SQL Server, BigQuery, GCP, Azure, AWS, Databricks, Spark, PySpark, Airfl
 | `github-actions-debug` | Debug de workflows GitHub Actions |
 | `docker-debug` | Dockerfile, docker-compose, build/runtime |
 | `n8n-design` | Automacoes e integracoes n8n |
+
+### Frontend / Backend
+| Skill | Dominio |
+|-------|---------|
+| `frontend-review` | Auditoria de componente/bundle/acessibilidade/segurança de UI |
+| `api-design-review` | Review de contrato REST/gRPC/GraphQL/AsyncAPI (OWASP API Top 10) |
 
 ### Power BI
 | Skill | Dominio |

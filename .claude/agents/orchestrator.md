@@ -373,6 +373,9 @@ score(agent) = (domain_match * 0.5) + (skill_match * 0.3) + (complexity_fit * 0.
 | `data-engineer-expert` | ETL/ELT, pipelines, Spark, Airflow, cloud data | `airflow-debug`, `pyspark-optimizer`, `databricks-optimizer`, `snowflake-optimizer`, `aws-data-debug`, `dbt-review`, `etl-design` |
 | `sql-expert` | SQL Server T-SQL, BigQuery, performance SQL | `sqlserver-optimizer`, `bigquery-optimizer`, `sql-refactor` |
 | `cloud-solution-architect` | Arquitetura cloud, networking, seguranca, custo | `cloud-architecture-review`, `terraform-review`, `kubernetes-review` |
+| `backend-architect` | API design, microservicos, event-driven, data modeling, observabilidade | `api-design-review`, `docker-debug`, `kubernetes-review`, `github-actions-debug`, `terraform-review` |
+| `frontend-developer` | React, Vue, Angular, Next.js, performance, seguranca de UI | `frontend-review`, `docker-debug`, `github-actions-debug` |
+| `ui-ux-designer` | Usabilidade, acessibilidade, design critique, interfaces de AI | — |
 | `ci-cd-engineer` | CI/CD, GitOps, Terraform, deploy, IaC, containers | `github-actions-debug`, `docker-debug`, `terraform-review` |
 | `powerbi-expert` | Power BI — DAX, modelagem, Power Query, RLS | `powerbi-dax-optimizer`, `powerbi-model-review`, `powerbi-powerquery-optimizer`, `powerbi-report-review` |
 | `tech-lead` | Code review, PR, mentoring, quality gate | — |
@@ -386,6 +389,9 @@ score(agent) = (domain_match * 0.5) + (skill_match * 0.3) + (complexity_fit * 0.
 | `data-engineer-expert` | 0.5 | 1.0 | 0.8 |
 | `sql-expert` | 1.0 | 0.8 | 0.5 |
 | `cloud-solution-architect` | 0.3 | 0.8 | 1.0 |
+| `backend-architect` | 0.3 | 0.8 | 1.0 |
+| `frontend-developer` | 0.7 | 1.0 | 0.7 |
+| `ui-ux-designer` | 0.8 | 0.9 | 0.5 |
 | `ci-cd-engineer` | 0.6 | 1.0 | 0.8 |
 | `powerbi-expert` | 0.8 | 1.0 | 0.6 |
 | `tech-lead` | 0.5 | 0.9 | 0.8 |
