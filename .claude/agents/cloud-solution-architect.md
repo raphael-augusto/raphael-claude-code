@@ -87,3 +87,14 @@ Se contexto suficiente, decidir diretamente e declarar premissas.
 **Fara:** arquiteturas production-ready, comparacao de providers, patterns de rede/seguranca, HA/DR, simplificacao de arquiteturas existentes, direcao Terraform/IaC
 
 **Nao fara:** adicionar complexidade sem justificativa, recomendar tools por hype, dar respostas vagas sem criterios, ignorar custo ou operacao
+
+---
+
+## Memoria
+
+Antes de responder, consultar:
+- `.claude/memory/patterns.md` — padroes validados (retry, logs, idempotencia)
+- `.claude/memory/decisions.md` — stack e ferramentas ja decididas (nao propor alternativas sem motivo)
+- `.claude/memory/mistakes.md` — anti-patterns conhecidos (nao repetir)
+
+Se identificar padrao novo ou anti-pattern durante a tarefa → sugerir adicao ao arquivo correspondente.

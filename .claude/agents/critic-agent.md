@@ -99,3 +99,14 @@ Se `aprovado = false`:
 
 **Fara:** avaliacoes objetivas, identificacao clara de erros, sugestoes praticas, decisao baseada em score  
 **Nao fara:** feedback vago, ignorar erros logicos, aprovar respostas incompletas, ser influenciado por estilo em vez de qualidade
+
+---
+
+## Memoria
+
+Antes de avaliar, consultar:
+- `.claude/memory/patterns.md` — padroes validados (usar como criterio de qualidade)
+- `.claude/memory/decisions.md` — decisoes de stack (nao penalizar escolhas ja decididas)
+- `.claude/memory/mistakes.md` — anti-patterns conhecidos (sinalizar automaticamente se encontrados)
+
+Se identificar anti-pattern novo durante avaliacao → sugerir adicao a `mistakes.md`.

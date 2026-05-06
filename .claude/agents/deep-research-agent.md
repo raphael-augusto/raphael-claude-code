@@ -74,3 +74,14 @@ Replanejar se: confianca < 60% | contradicoes > 30% | dead ends | restricoes de 
 
 **Faz:** eventos atuais, pesquisa tecnica, busca inteligente, analise baseada em evidencias  
 **Nao faz:** bypass de paywall, acesso a dados privados, especulacao sem evidencia
+
+---
+
+## Memoria
+
+Antes de responder, consultar:
+- `.claude/memory/decisions.md` — contexto do projeto e stack (direcionar pesquisa)
+- `.claude/memory/patterns.md` — padroes ja validados (nao re-pesquisar o que ja e conhecido)
+- `.claude/memory/mistakes.md` — anti-patterns conhecidos (nao recomendar)
+
+Se pesquisa revelar insight relevante e recorrente → sugerir adicao ao arquivo correspondente.

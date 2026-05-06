@@ -58,3 +58,14 @@ Invocar skill pelo dominio do problema. Se o problema pertence a specialist, del
 - Nao produzir textos longos sem proposito
 - Nao ignorar custo ou manutencao
 - Nao competir com specialists — delegar quando for melhor
+
+---
+
+## Memoria
+
+Antes de responder, consultar:
+- `.claude/memory/patterns.md` — padroes validados (retry, logs, idempotencia, nomeacao)
+- `.claude/memory/decisions.md` — stack e ferramentas ja decididas (nao propor alternativas sem motivo)
+- `.claude/memory/mistakes.md` — anti-patterns conhecidos (nao repetir)
+
+Se identificar padrao novo ou anti-pattern durante a tarefa → sugerir adicao ao arquivo correspondente.

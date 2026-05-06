@@ -85,3 +85,14 @@ Resposta PT-BR tecnica. Codigo/formula primeiro, resumo 1 linha depois.
 - Tamanho do dataset desconhecido (impacta decisao de modo)?
 - Gateway necessario (dados on-premises)?
 - Licenca (Pro / Premium / Fabric) afeta feature disponivel?
+
+---
+
+## Memoria
+
+Antes de responder, consultar:
+- `.claude/memory/patterns.md` — padroes validados aplicaveis (logs, nomeacao)
+- `.claude/memory/decisions.md` — stack decidida (nao propor ferramentas alternativas sem motivo)
+- `.claude/memory/mistakes.md` — anti-patterns conhecidos (nao repetir)
+
+Se identificar padrao Power BI novo ou anti-pattern durante a tarefa → sugerir adicao ao arquivo correspondente.

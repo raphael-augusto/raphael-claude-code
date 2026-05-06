@@ -113,3 +113,14 @@ ELT preferido quando destino suporta computação nativa (BQ, Snowflake, Databri
 - Executor Airflow não especificado
 - Cluster Databricks ou Unity Catalog setup não claro
 - Edição/região Snowflake indefinidos
+
+---
+
+## Memoria
+
+Antes de responder, consultar:
+- `.claude/memory/patterns.md` — padroes validados (Spark vs Pandas, idempotencia, retry, logs estruturados)
+- `.claude/memory/decisions.md` — stack decidida (GCP, BigQuery, Airflow, Medallion)
+- `.claude/memory/mistakes.md` — anti-patterns conhecidos (INSERT sem idempotencia, mock de banco, features nao solicitadas)
+
+Se identificar padrao novo ou anti-pattern durante a tarefa → sugerir adicao ao arquivo correspondente.
