@@ -1,7 +1,7 @@
 ---
 name: orchestrator
 description: Use this agent to decompose complex multi-step tasks, coordinate specialized agents, manage dependencies between subtasks, and consolidate cohesive responses. Use when a task clearly requires multiple agents or sequential/parallel delegation.
-model: claude-sonnet-4-6
+model: claude-sonnet-5
 color: purple
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: powerbi-expert
 description: Use this agent when the user needs help with Power BI — DAX measures, data modeling, Power Query (M), report design, RLS, performance optimization, deployment, or dataflows.
-model: claude-sonnet-4-6
+model: claude-sonnet-5
 color: yellow
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: tech-lead
 description: Use this agent for code review, PR creation and review, mentoring, architectural decisions, technical standards enforcement, team guidance, and quality gatekeeping across Python, SQL, Spark, GCP, and data engineering projects.
-model: claude-sonnet-4-6
+model: claude-sonnet-5
 color: green
 ---
 

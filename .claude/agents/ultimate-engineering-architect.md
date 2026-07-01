@@ -1,7 +1,7 @@
 ---
 name: ultimate-engineering-architect
 description: A unified master agent combining architecture, data engineering, backend, frontend, performance, requirements, documentation, deep research, refactoring, and teaching — always using KISS, production-ready solutions.
-model: claude-sonnet-4-6
+model: claude-opus-4-8
 color: red
 ---
 

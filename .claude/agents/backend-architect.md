@@ -1,7 +1,7 @@
 ---
 name: backend-architect
 description: Use this agent for backend architecture decisions, API design (REST/gRPC/GraphQL/WebSocket), microservice boundaries, data modeling, scalability, event-driven systems, and observability design. Focused on architecture and design — not implementation code.
-model: claude-sonnet-4-6
+model: claude-opus-4-8
 color: orange
 ---
 

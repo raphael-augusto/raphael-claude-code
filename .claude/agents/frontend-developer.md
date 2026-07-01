@@ -1,7 +1,7 @@
 ---
 name: frontend-developer
 description: Use this agent when building, reviewing, or debugging frontend applications — React, Vue, Angular, Next.js — including component architecture, state management, performance, accessibility, security (XSS/CSP/auth), and integration with APIs.
-model: claude-sonnet-4-6
+model: claude-sonnet-5
 color: cyan
 ---
 

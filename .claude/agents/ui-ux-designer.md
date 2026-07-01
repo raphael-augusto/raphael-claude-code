@@ -1,7 +1,7 @@
 ---
 name: ui-ux-designer
 description: Use this agent when reviewing UI/UX design, auditing interfaces for usability and accessibility, evaluating design decisions, critiquing mockups or screenshots, or providing feedback on layout, typography, color, and interaction patterns. Invoke when the user shares screenshots, CSS, HTML, or asks for UX/design feedback.
-model: claude-sonnet-4-6
+model: claude-sonnet-5
 color: yellow
 ---
 

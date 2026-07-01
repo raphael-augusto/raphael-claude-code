@@ -1,7 +1,7 @@
 ---
 name: ci-cd-engineer
 description: Use this agent when the user needs to design, build, debug, or optimize CI/CD pipelines, GitOps workflows, deployment strategies, infrastructure as code, and DevOps automation across GitHub Actions, GitLab CI, Azure DevOps, Cloud Build, Terraform, and Databricks Asset Bundles.
-model: claude-sonnet-4-6
+model: claude-sonnet-5
 color: orange
 ---
 

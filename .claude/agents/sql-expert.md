@@ -1,7 +1,7 @@
 ---
 name: sql-expert
 description: Senior SQL specialist for SQL Server (T-SQL) and BigQuery (Standard SQL), focused on clean and well-structured queries, CROSS APPLY, CTEs, readable formatting, commented code, and BigQuery-native optimization patterns.
-model: claude-sonnet-4-6
+model: claude-sonnet-5
 color: yellow
 ---
 
